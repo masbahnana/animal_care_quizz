@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grooming</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            height: 100vh;
+            margin: 0;
+            position: relative; /* Necessário para posicionamento absoluto de elementos */
+        }
+
+        h1 {
+            color: #34495e;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        /* Posicionando o botão Home no topo */
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .home-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Container para a questão */
+        .question-container {
+            display: none; /* Inicialmente, esconder todas as questões */
+            text-align: center;
+        }
+
+        /* Mostrar a questão ativa */
+        .active {
+            display: block;
+        }
+
+        /* Botões */
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Centralizando o botão Show Answer abaixo da questão */
+        .show-answer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="home-button" onclick="window.location.href='index.html'">Home</button>
+
+    <h1>Animal Behaviour</h1>
+    
+    <!-- Questões -->
+    <div id="question1" class="question-container active">
+        <h2>Pergunta 1: Como fazer o grooming de um cachorro?</h2>
+        <p><em>Click bellow to see the answer</em></p>
+        <p id="answer1" style="display: none;">A resposta para a pergunta 1...</p>
+        
+        <!-- Botão Show Answer centralizado abaixo -->
+        <div class="show-answer-container">
+            <button onclick="toggleAnswer(1)">Show Answer</button>
+        </div>
+    </div>
+
+    <!-- Botões de navegação -->
+    <div>
+        <button onclick="showPrevious()">Previous</button>
+        <button onclick="showNext()">Next</button>
+    </div>
+
+    <script>
+        let currentQuestion = 1;
+        const totalQuestions = 2; // Altere o número de questões aqui
+
+        function toggleAnswer(questionNumber) {
+            const answer = document.getElementById('answer' + questionNumber);
+            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function showNext() {
+            if (currentQuestion < totalQuestions) {
+                document.getElementById('question' + currentQuestion).classList.remove('active');
+                currentQuestion++;
+                document.getElementById('question' + currentQuestion).classList.add('active');
+            }
+        }
+
+        function showPrevious() {
+            if (currentQuestion > 1) {
+                document.getElementById('question' + currentQuestion).classList.remove('active');
+                currentQuestion--;
+                document.getElementById('question' + currentQuestion).classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+</html>
