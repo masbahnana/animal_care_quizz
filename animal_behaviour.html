@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grooming</title>
+    <title>Animal Behaviour</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -95,29 +95,38 @@
     
     <!-- Questões -->
     <div id="question1" class="question-container active">
-        <h2>Pergunta 1: Como fazer o grooming de um cachorro?</h2>
-        <p><em>Click bellow to see the answer</em></p>
-        <p id="answer1" style="display: none;">A resposta para a pergunta 1...</p>
+        <h2>Question 1: Name 3 types of scissors used in the grooming salon and state a use for each.</h2>
+        <div id="help1"><p><em>Click below to see the answer</em></p></div>
+        
+        <ul id="answer1" style="display: none;">
+            <li><strong>Thinning Scissors</strong>: Used for blending and reducing bulk in the fur.</li>
+            <li><strong>Curved Scissors</strong>: Helps shape rounded areas like paws and faces.</li>
+            <li><strong>Straight Scissors</strong>: Used for general trimming and shaping.</li>
+        </ul>
         
         <!-- Botão Show Answer centralizado abaixo -->
         <div class="show-answer-container">
-            <button onclick="toggleAnswer(1)">Show Answer</button>
+            <button id='button1' onclick="toggleAnswer(1)">Show Answer</button>
         </div>
     </div>
 
-    <!-- Botões de navegação -->
-    <div>
+     <!-- Botões de navegação -->
+     <div>
         <button onclick="showPrevious()">Previous</button>
         <button onclick="showNext()">Next</button>
     </div>
 
     <script>
         let currentQuestion = 1;
-        const totalQuestions = 2; // Altere o número de questões aqui
+        const totalQuestions = 33; // Altere o número de questões aqui
 
         function toggleAnswer(questionNumber) {
             const answer = document.getElementById('answer' + questionNumber);
+            const help = document.getElementById('help' + questionNumber);
+            const button = document.getElementById('button' + questionNumber);
             answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            help.style.display = help.style.display === 'none' ? 'block' : 'none';
+            button.textContent = button.textContent === 'Show Answer' ? 'Hide Answer' : 'Show Answer';
         }
 
         function showNext() {

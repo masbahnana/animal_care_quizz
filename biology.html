@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grooming</title>
+    <title>Biology</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -87,55 +87,22 @@
         }
     </style>
 </head>
+
 <body>
 
     <button class="home-button" onclick="window.location.href='index.html'">Home</button>
 
     <h1>Biology</h1>
-    
-    <!-- Questões -->
-    <div id="question1" class="question-container active">
-        <h2>Pergunta 1: Como fazer o grooming de um cachorro?</h2>
-        <p><em>Click bellow to see the answer</em></p>
-        <p id="answer1" style="display: none;">A resposta para a pergunta 1...</p>
-        
-        <!-- Botão Show Answer centralizado abaixo -->
-        <div class="show-answer-container">
-            <button onclick="toggleAnswer(1)">Show Answer</button>
-        </div>
-    </div>
+
+    <!-- Container onde as perguntas vão aparecer -->
+    <div id="question-container"></div>
 
     <!-- Botões de navegação -->
-    <div>
+    <div class="navigation-buttons">
         <button onclick="showPrevious()">Previous</button>
         <button onclick="showNext()">Next</button>
     </div>
 
-    <script>
-        let currentQuestion = 1;
-        const totalQuestions = 2; // Altere o número de questões aqui
-
-        function toggleAnswer(questionNumber) {
-            const answer = document.getElementById('answer' + questionNumber);
-            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
-        }
-
-        function showNext() {
-            if (currentQuestion < totalQuestions) {
-                document.getElementById('question' + currentQuestion).classList.remove('active');
-                currentQuestion++;
-                document.getElementById('question' + currentQuestion).classList.add('active');
-            }
-        }
-
-        function showPrevious() {
-            if (currentQuestion > 1) {
-                document.getElementById('question' + currentQuestion).classList.remove('active');
-                currentQuestion--;
-                document.getElementById('question' + currentQuestion).classList.add('active');
-            }
-        }
-    </script>
-
+    <script src="biology.js"></script>
 </body>
 </html>
