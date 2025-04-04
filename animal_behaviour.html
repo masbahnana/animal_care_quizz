@@ -50,7 +50,7 @@
 
         /* Container para a questão */
         .question-container {
-            display: none; /* Inicialmente, esconder todas as questões */
+            display: block; /* Inicialmente, esconder todas as questões */
             text-align: center;
         }
 
@@ -87,64 +87,22 @@
         }
     </style>
 </head>
+
 <body>
 
     <button class="home-button" onclick="window.location.href='index.html'">Home</button>
 
     <h1>Animal Behaviour</h1>
-    
-    <!-- Questões -->
-    <div id="question1" class="question-container active">
-        <h2>Question 1: Name 3 types of scissors used in the grooming salon and state a use for each.</h2>
-        <div id="help1"><p><em>Click below to see the answer</em></p></div>
-        
-        <ul id="answer1" style="display: none;">
-            <li><strong>Thinning Scissors</strong>: Used for blending and reducing bulk in the fur.</li>
-            <li><strong>Curved Scissors</strong>: Helps shape rounded areas like paws and faces.</li>
-            <li><strong>Straight Scissors</strong>: Used for general trimming and shaping.</li>
-        </ul>
-        
-        <!-- Botão Show Answer centralizado abaixo -->
-        <div class="show-answer-container">
-            <button id='button1' onclick="toggleAnswer(1)">Show Answer</button>
-        </div>
-    </div>
 
-     <!-- Botões de navegação -->
-     <div>
+    <!-- Container onde as perguntas vão aparecer -->
+    <div id="question-container"></div>
+
+    <!-- Botões de navegação -->
+    <div class="navigation-buttons">
         <button onclick="showPrevious()">Previous</button>
         <button onclick="showNext()">Next</button>
     </div>
 
-    <script>
-        let currentQuestion = 1;
-        const totalQuestions = 33; // Altere o número de questões aqui
-
-        function toggleAnswer(questionNumber) {
-            const answer = document.getElementById('answer' + questionNumber);
-            const help = document.getElementById('help' + questionNumber);
-            const button = document.getElementById('button' + questionNumber);
-            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
-            help.style.display = help.style.display === 'none' ? 'block' : 'none';
-            button.textContent = button.textContent === 'Show Answer' ? 'Hide Answer' : 'Show Answer';
-        }
-
-        function showNext() {
-            if (currentQuestion < totalQuestions) {
-                document.getElementById('question' + currentQuestion).classList.remove('active');
-                currentQuestion++;
-                document.getElementById('question' + currentQuestion).classList.add('active');
-            }
-        }
-
-        function showPrevious() {
-            if (currentQuestion > 1) {
-                document.getElementById('question' + currentQuestion).classList.remove('active');
-                currentQuestion--;
-                document.getElementById('question' + currentQuestion).classList.add('active');
-            }
-        }
-    </script>
-
+    <script src="animal_behaviour.js"></script>
 </body>
 </html>
