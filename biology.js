@@ -1,35 +1,33 @@
 const questions = [
     {
-        question: "Name 3 types of scissors used in the grooming salon and state a use for each.",
-        answer: `
-            <ul>
-                <li><strong>Thinning Scissors</strong>: Used for blending and reducing bulk in the fur.</li>
-                <li><strong>Curved Scissors</strong>: Helps shape rounded areas like paws and faces.</li>
-                <li><strong>Straight Scissors</strong>: Used for general trimming and shaping.</li>
-            </ul>
-        `
+        question: "What is the powerhouse of the cell?",
+        answer: "Mitochondria"
     },
     {
-        question: "When using a clipper, what must you consider? Give 4 consideration points.",
-        answer: `
-            <ul>
-                <li>Ensure the blades are sharp to avoid pulling the fur.</li>
-                <li>Regularly check the blade temperature to prevent burns.</li>
-                <li>Clip in the direction of hair growth for a smoother finish.</li>
-                <li>Clean and oil the clippers after each use.</li>
-            </ul>
-        `
+        question: "What is the function of red blood cells?",
+        answer: "Transport oxygen throughout the body."
+    },
+    {
+        question: "Which organ produces insulin?",
+        answer: "Pancreas"
     }
 ];
 
-let currentQuestionIndex = 0;
+// Variável para controlar qual pergunta está sendo exibida
+let currentQuestionIndex = 0; // Defina 0 para começar com a primeira pergunta
 
+// Função para exibir uma pergunta na página
 function showQuestion() {
+    console.log("showQuestion called, currentQuestionIndex:", currentQuestionIndex); // Verificando o índice da pergunta
+
     const container = document.getElementById("question-container");
-    container.innerHTML = "";
+    if (!container) {
+        console.log("Container not found!");
+    }
+
+    container.innerHTML = ""; // Limpa a pergunta anterior
 
     const questionData = questions[currentQuestionIndex];
-
     const questionDiv = document.createElement("div");
     questionDiv.classList.add("question-container");
 
@@ -45,10 +43,11 @@ function showQuestion() {
     container.appendChild(questionDiv);
 }
 
+// Função para mostrar/ocultar a resposta
 function toggleAnswer() {
     const answer = document.getElementById("answer");
     const hint = document.querySelector(".hint");
-
+    
     if (answer.style.display === "none") {
         answer.style.display = "block";
         hint.style.display = "none";
@@ -58,18 +57,26 @@ function toggleAnswer() {
     }
 }
 
+// Função para mostrar a próxima pergunta
 function showNext() {
+    console.log("showNext called, currentQuestionIndex:", currentQuestionIndex); // Verificando o índice atual
     if (currentQuestionIndex < questions.length - 1) {
         currentQuestionIndex++;
         showQuestion();
     }
 }
 
+// Função para mostrar a pergunta anterior
 function showPrevious() {
+    console.log("showPrevious called, currentQuestionIndex:", currentQuestionIndex); // Verificando o índice atual
     if (currentQuestionIndex > 0) {
         currentQuestionIndex--;
         showQuestion();
     }
 }
 
-document.addEventListener("DOMContentLoaded", showQuestion);
+// Exibir a primeira pergunta ao carregar a página
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOMContentLoaded triggered");
+    showQuestion();
+});
