@@ -14,7 +14,7 @@ const question = [
         "Improve training methods",
         "Aid conservation efforts",
         "Enhance human-animal interactions"
-    ]
+        ]
     },
     {
       question: "What are the 4 questions of Animal Behaviour?",
@@ -155,11 +155,11 @@ const question = [
         answer: "Internal fertilization occurs inside the body of the female, while external fertilization happens outside the body, usually in the environment."
     },
     {
-      question: "Name a group of animals that commonly use (a) internal fertilization and (b) external fertilization",
+        question: "Name a group of animals that commonly use (a) internal fertilization and (b) external fertilization",
         answer: "(a) Mammals commonly use internal fertilization. (b) Fish and amphibians commonly use external fertilization."
-      },
-      {
-        question: "Why does a fish produce millions of eggs each year, while a rabbit only produces a couple of thousand?",
+    },
+    {
+         question: "Why does a fish produce millions of eggs each year, while a rabbit only produces a couple of thousand?",
         answer: "Because fish rely on external fertilization with low survival rates, so they produce many eggs. Rabbits use internal fertilization and provide parental care, increasing offspring survival."
       },
       {
@@ -225,8 +225,221 @@ const question = [
       {
         question: "What is cloning?",
         answer: "Cloning is producing a genetically identical copy of an organism, often through somatic cell nuclear transfer."
-      }
-  ];
+      },
+      {
+        question: "Define Juvenile Behaviour, giving an example.",
+        answer: "Juvenile behaviour refers to the actions and responses shown by young animals, often including play. Example: A puppy chasing its tail."
+      },
+      {
+        question: "Define Neoteny, giving example of such.",
+        answer: "Neoteny is the retention of juvenile traits into adulthood. Example: Domestic dogs often retain playful behaviour seen in puppies."
+      },
+      {
+        question: "Give an example of a dog breed that has high level of neoteny and an example of a breed with low levels.",
+        answer: "High neoteny: Cavalier King Charles Spaniel. Low neoteny: Basenji."
+      },
+      {
+        question: "What are the effects of puberty on males?",
+        answer: "Puberty in males leads to the development of secondary sexual characteristics, such as increased aggression, scent marking, and testicle development."
+      },
+      {
+        question: "Give some signs of puberty in females.",
+        answer: "Signs include the start of the oestrous cycle, vulva swelling, changes in behaviour, and interest in males."
+      },
+      {
+        question: "Differentiate between innate and learned behaviours.",
+        answer: "Innate behaviours are inborn and automatic, while learned behaviours are acquired through experience and environment."
+      },
+      {
+        question: "Why is innate behaviour so important?",
+        answer: "Innate behaviours are crucial for survival, especially in young animals who may not have time to learn through trial and error."
+      },
+      {
+        question: "Who is associated with ‘Classical Conditioning’?",
+        answer: "Ivan Pavlov is associated with classical conditioning."
+      },
+      {
+        question: "Discuss the process of classical conditioning.",
+        answer: "Classical conditioning is when an animal learns to associate a neutral stimulus with a significant one, such as a bell with food, leading to a conditioned response like salivation."
+      },
+      {
+        question: "Who is associated with ‘Operant Conditioning’?",
+        answer: "B.F. Skinner is associated with operant conditioning."
+      },
+      {
+        question: "Explain the process of operant conditioning.",
+        answer: "Operant conditioning is learning through consequences. Behaviours are strengthened by rewards or weakened by punishments."
+      },
+      {
+        question: "What is abnormal behaviour?",
+        answer: "Abnormal behaviour refers to actions that deviate from normal patterns and may indicate stress, illness, or poor welfare."
+      },
+      {
+        question: "What are abnormal behaviours often the result of?",
+        answer: "They are often the result of stress, boredom, confinement, or frustration."
+      },
+      {
+        question: "What are the consequences to the animals of abnormal behaviour?",
+        answer: "Consequences include self-injury, reduced quality of life, and difficulty in social integration or reproduction."
+      },
+      {
+        question: "What is a social animal, giving an example of one?",
+        answer: "A social animal lives and interacts in groups. Example: Wolves."
+      },
+      {
+        question: "“Social animal must cooperate”, what does that mean, giving one example of how social animals cooperate?",
+        answer: "It means animals work together for mutual benefit. Example: Meerkats take turns watching for predators while others forage."
+      },
+      {
+        question: "Why is communication important for social living?",
+        answer: "Communication helps animals coordinate activities, warn of danger, find mates, and maintain social bonds."
+      },
+      {
+        question: "Animals often compete for resources; list some resources they may compete for.",
+        answer: "Food, mates, territory, water, and shelter."
+      },
+      {
+        question: "Distinguish between interspecific and intraspecific competition.",
+        answer: "Interspecific competition occurs between different species; intraspecific is between individuals of the same species."
+      },
+      {
+        question: "What is mating?",
+        answer: "Mating is the act of pairing between male and female animals for the purpose of reproduction."
+      },
+      {
+        question: "What is courtship, and why is it important?",
+        answer: "Courtship is the set of behaviours animals perform to attract a mate. It ensures mate selection, species recognition, and reproductive success."
+      },
+      {
+        question: "Some animals are territorial; what does that mean?",
+        answer: "Territorial animals defend a specific area against others, usually for resources like food or mates."
+      },
+      {
+        question: "What do we mean by ‘Behavioural Extinction’?",
+        answer: "Behavioural extinction is the loss of a learned behaviour when reinforcement is no longer given."
+      },
+      {
+        question: "In relation to animal behaviour, discrimination means what?",
+        answer: "Discrimination means the animal's ability to distinguish between different stimuli and respond appropriately."
+      },
+      {
+        question: "What is animal migration?",
+        answer: "Migration is the regular, often seasonal, movement of animals from one region to another for breeding, food, or climate reasons."
+      },
+      {
+        question: "Name the 8 types of animal migration.",
+        answer: [
+            "1) Seasonal",
+            "2) Reproductive",
+            "3) Latitudinal",
+            "4) Longitudinal",
+            "5) Vertical",
+            "6) Nomadic",
+            "7) Irruptive",
+            "8) Altitudinal"
+        ]
+      },
+      {
+        question: "What is the difference between internal and external stimulus, giving an example of each?",
+        answer: "Internal stimulus comes from inside the body (e.g., hunger). External stimulus comes from the environment (e.g., light or sound)."
+      },
+      {
+        question: "What is a stimuli?",
+        answer: "A stimuli is any change in the environment that triggers a response from an animal."
+      },
+      {
+        question: "Give four reasons why animals migrate.",
+        answer: [
+            "1) To find food",
+            "2) To escape harse climates",
+            "3) To reprodume",
+            "4) To avoid predator"
+        ]
+      },
+      {
+        question: "Give four examples of animals that migrate and the type of migration they undergo.",
+        answer: [
+            "1) Arctic Tern - long-distance, seasonal",
+            "2) Wildebeest - nomadic, seasonal",
+            "3) Salmon - reproductive",
+            "4) Monarch Butterfly - latitudinal"
+        ]
+      },
+      {
+        question: "Give some examples of migration cues",
+        answer: "Examples of migration cues include changes in day length, temperature, food availability, magnetic fields, and celestial cues like the position of the sun and stars."
+      },
+      {
+        question: "Distinguish between Interspecies and Intraspecies communication",
+        answer: "Interspecies communication occurs between different species (e.g., a dog barking at a human), while intraspecies communication happens within the same species (e.g., wolves howling to communicate with other wolves)."
+      },
+      {
+        question: "Name and explain four types of animal communication",
+        answer: [
+            "1. Visual: using body language or color changes (e.g., peacocks).",
+            "2. Auditory: using sounds (e.g., bird songs).",
+            "3. Chemical: using pheromones (e.g., ants following a scent trail).",
+            "4. Tactile: physical touch (e.g., grooming in primates)."
+        ]
+      },
+      {
+        question: "Are internal or external cues to migration more common and why?",
+        answer: "External cues are more common because animals often rely on environmental changes such as daylight length, temperature, and food availability to trigger migration."
+      },
+      {
+        question: "List six methods of navigation used by animals",
+        answer: [
+            "1. Sun orientation",
+            "2. Star orientation",
+            "3. Magnetic fields", 
+            "4. Landmarks", 
+            "5. Olfactory cues",
+            "6. Polarized light patterns."
+        ]
+      },
+      {
+        question: "Distinguish between a social animal and solitary animal, giving example of each",
+        answer: "Social animals live and interact in groups (e.g., elephants), while solitary animals live alone and interact mainly for mating (e.g., leopards)."
+      },
+      {
+        question: "What is the name given to scientists who study animal behaviour?",
+        answer: "Scientists who study animal behaviour are called ethologists."
+      },
+      {
+        question: "List a chemical used for animal communication.",
+        answer: "Pheromones are chemicals commonly used for animal communication, especially for marking territory or signaling readiness to mate."
+      },
+      {
+        question: "Define ‘Reflex’ and give an example of a reflex that an animal might display.",
+        answer: "A reflex is an automatic, involuntary response to a stimulus. Example: A dog pulling its paw away from a hot surface."
+      },
+      {
+        question: "What are the 5 steps of ‘Reflex Action’?",
+        answer: [
+            "1. Stimulus",
+            "2. Receptor",
+            "3. Sensory neuron",
+            "4. Motor neuron",
+            "5. Response by effector (muscle or gland)"
+        ]
+      },
+      {
+        question: "Distinguish between ‘Learned Reaction’ and ‘Reflex’.",
+        answer: "A reflex is innate and automatic, while a learned reaction is acquired through experience or conditioning."
+      },
+      {
+        question: "What is habituation and give an example of this behaviour in action.",
+        answer: "Habituation is when an animal stops responding to a repeated, harmless stimulus. Example: A cat ignoring the sound of a vacuum after being exposed to it frequently."
+      },
+      {
+        question: "What is observation learning?",
+        answer: "Observation learning is learning by watching the behavior of others and mimicking it. Example: A young chimp learning to use a stick to get termites by watching adults."
+      },
+      {
+        question: "Distinguish between ‘Classical’ and ‘Operant’ Conditioning.",
+        answer: "Classical conditioning pairs a neutral stimulus with a response (Pavlov's dogs). Operant conditioning involves learning through rewards or punishments for behavior (Skinner’s box)."
+      }  
+];
 
 // Variável para controlar qual pergunta está sendo exibida
 let currentQuestionIndex = 0; // Defina 0 para começar com a primeira pergunta
