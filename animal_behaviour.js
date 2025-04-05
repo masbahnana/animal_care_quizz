@@ -101,7 +101,13 @@ const question = [
     },
     {
       question: "What is courtship and why is courtship important? Give 4 reasons.",
-      answer: "Courtship is the behavior animals use to attract a mate. It helps ensure mating between compatible partners and can indicate health and strength."
+      answer: [
+        "Courtship is a set of behavioural displays or actions used by animals to attract a mate. It is important because:",
+        "1) It helps individuals choose a healthy and compatible mate.",
+        "2) It ensures species recognition to prevent mating with the wrong species.",
+        "3) It strengthens pair bonds in monogamous species.",
+        "4) It increases the chance of successful reproduction."
+      ]
     },
     {
       question: "Name and explain the two types of animal reproduction.",
@@ -122,7 +128,7 @@ const question = [
       ]
     },
     {
-      question: "In sexual reproduction; the genetic make-up of offspring comes from where?",
+      question: "In sexual reproduction, the genetic make-up of the offspring comes from where?",
       answer: "A combination of both parents, making it genetically unique."
     },
     {
@@ -143,7 +149,83 @@ const question = [
     {
       question: "A spider spinning a web or a cub hunting prey is an example of what type of behaviour?",
       answer: "Instinctive (innate) behaviour."
-    }
+    },
+    {
+         question: "What is the main difference between internal and external fertilization?",
+        answer: "Internal fertilization occurs inside the body of the female, while external fertilization happens outside the body, usually in the environment."
+    },
+    {
+      question: "Name a group of animals that commonly use (a) internal fertilization and (b) external fertilization",
+        answer: "(a) Mammals commonly use internal fertilization. (b) Fish and amphibians commonly use external fertilization."
+      },
+      {
+        question: "Why does a fish produce millions of eggs each year, while a rabbit only produces a couple of thousand?",
+        answer: "Because fish rely on external fertilization with low survival rates, so they produce many eggs. Rabbits use internal fertilization and provide parental care, increasing offspring survival."
+      },
+      {
+        question: "Differentiate between monogamy and polygamy",
+        answer: "Monogamy is when an animal has one mate, while polygamy involves having multiple mates."
+      },
+      {
+        question: "Give an example of (a) a monogamous and (b) a polygamous animal",
+        answer: "(a) Swans are monogamous. (b) Lions are polygamous."
+      },
+      {
+        question: "In relation to animal reproduction what does the R and K strategies refer to?",
+        answer: "R-strategists produce many offspring with low parental investment. K-strategists produce fewer offspring but invest heavily in their care."
+      },
+      {
+        question: "Give one animal that is (a) R-selection and (b) K-selection",
+        answer: "(a) Frogs are R-strategists. (b) Elephants are K-strategists."
+      },
+      {
+        question: "What is the ‘gestation period’?",
+        answer: "The time between fertilization and birth during which the embryo develops inside the mother."
+      },
+      {
+        question: "What is metamorphosis, giving an example of animal that goes through the process.",
+        answer: "Metamorphosis is a biological process in which an animal undergoes a dramatic change in form. Example: A caterpillar turning into a butterfly."
+      },
+      {
+        question: "Identify the importance of sound breeding/reproduction practices in agriculture and what are two main things that agricultural breeders should consider?",
+        answer: "Good breeding improves productivity and animal welfare. Breeders should consider genetic quality and health of the animals."
+      },
+      {
+        question: "Explain the following terms:\na) Fertilization\nb) Ovulation\nc) Gestation\nd) Ovaries and Testes",
+        answer: "a) Fertilization: Union of sperm and egg.\nb) Ovulation: Release of an egg from the ovary.\nc) Gestation: Development period of embryo.\nd) Ovaries produce eggs; testes produce sperm."
+      },
+      {
+        question: "Explain the following terms in relation to male and female reproductive tracts:\nFemale\nMale\nVulva\nEpididymis\nCervix\nVas Deferens\nUterus\nScrotum\nFallopian Tube\nSheath",
+        answer: "Female: Vulva - external opening, Cervix - opening to uterus, Uterus - site of embryo development, Fallopian Tube - where fertilization occurs.\nMale: Epididymis - stores sperm, Vas Deferens - carries sperm, Scrotum - holds testes, Sheath - protects penis."
+      },
+      {
+        question: "What are the four stages of the Oestrous Cycle and give four general signs of receptiveness in animals.",
+        answer: "The four stages: Proestrus, Estrus, Metestrus, Diestrus.\nSigns: Mounting, swollen vulva, increased vocalization, restlessness."
+      },
+      {
+        question: "What are the gestation periods for the following animals:\na) Horse\nb) Sheep\nc) Dog\nd) Cat",
+        answer: "a) Horse: ~11 months\nb) Sheep: ~5 months\nc) Dog: ~63 days\nd) Cat: ~63-65 days"
+      },
+      {
+        question: "What is meant by the term Parturition and what are the general signs of parturition?",
+        answer: "Parturition is the act of giving birth. Signs: restlessness, nesting behaviour, swollen vulva, and loss of appetite."
+      },
+      {
+        question: "What are the four stages of mammal parturition?",
+        answer: "1. Preparation (nesting/restlessness)\n2. Cervical dilation\n3. Delivery of fetus\n4. Expulsion of placenta"
+      },
+      {
+        question: "Explain the term Dystocia, give four reasons for Dystocia and give two solutions.",
+        answer: "Dystocia is difficult or abnormal birth. Reasons: large fetus, wrong position, weak contractions, narrow birth canal.\nSolutions: veterinary assistance, cesarean section."
+      },
+      {
+        question: "What is AI and give four advantages of AI.",
+        answer: "AI stands for Artificial Insemination.\nAdvantages: genetic improvement, disease control, cost-effective, no need to keep males."
+      },
+      {
+        question: "What is cloning?",
+        answer: "Cloning is producing a genetically identical copy of an organism, often through somatic cell nuclear transfer."
+      }
   ];
 
 // Variável para controlar qual pergunta está sendo exibida
