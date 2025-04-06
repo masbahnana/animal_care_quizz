@@ -3,7 +3,7 @@ const currentHour = now.getHours();
 const currentDay = now.getDay(); // 1 = Monday
 
 if (currentDay === 1 && currentHour >= 9 && currentHour < 11) {
-  document.body.innerHTML = "<h2 style='text-align:center; margin-top: 20%'>Conteúdo de Grooming indisponível durante o horário da prova.</h2>";
+  document.body.innerHTML = "<h2 style='text-align:center; margin-top: 20%'>ACCESS DENIED DURING EXAMS</h2>";
 }
 
 const questions = [
