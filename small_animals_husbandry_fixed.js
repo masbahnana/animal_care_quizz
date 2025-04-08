@@ -5,6 +5,7 @@ const currentDay = now.getDay(); // 3 = Wednesday,
 if (currentDay === 3 && currentHour >= 9 && currentHour < 11) {
   document.body.innerHTML = "<h2 style='text-align:center; margin-top: 20%'>ACCESS DENIED DURING EXAMS</h2>";
 }
+
 const questions = [
 
     {
@@ -20,7 +21,6 @@ const questions = [
         answer: [
             "Proper vaccination of all animals",
             "Maintaining clean and desinfected premises"
-
         ]
     },
     {
