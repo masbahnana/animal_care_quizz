@@ -1,3 +1,10 @@
+const now = new Date();
+const currentHour = now.getHours();
+const currentDay = now.getDay(); // 3 = Wednesday,
+
+if (currentDay === 3 && currentHour >= 9 && currentHour < 11) {
+  document.body.innerHTML = "<h2 style='text-align:center; margin-top: 20%'>ACCESS DENIED DURING EXAMS</h2>";
+}
 const questions = [
 
     {
@@ -5,14 +12,14 @@ const questions = [
         answer: [
             "Presence of organic matter",
             "Incorrect concentration/dilution",
-            "Contact time",
+            "Contact time"
         ]
     },
     {
         question: "List 2 effective strategies for controlling and preventing infectious disease on animal premises.",
         answer: [
             "Proper vaccination of all animals",
-            "Maintaining clean and desinfected premises",
+            "Maintaining clean and desinfected premises"
 
         ]
     },
@@ -20,7 +27,7 @@ const questions = [
         question: "What are the signs of general ill health in a small animal? (Physical and behavioral)",
         answer: [
             "Physical signs: lethargy, vomiting, diarrhea, coughing, sneezing",
-            "Behavioral signs: hiding, aggression, excessive grooming, loss of appetite",
+            "Behavioral signs: hiding, aggression, excessive grooming, loss of appetite"
         ]
     },
     {
@@ -33,7 +40,7 @@ const questions = [
         question: "List the core and non-core vaccines for dogs.",
         answer: [
             "Core vaccines: Distemper, Parvovirus, Adenovirus",
-            "Non-core vaccines: Rabies, Bordetella, Lyme disease, Leptospirosis",
+            "Non-core vaccines: Rabies, Bordetella, Lyme disease, Leptospirosis"
         ]
     },
     {
@@ -58,12 +65,12 @@ const questions = [
         question: "Discuss the effects of poor kennel design on both the human and the animal.",
         answer: [
             "<strong>For Animals:</strong> Stress, anxiety, aggression, and health issues due to inadequate space, ventilation, and sanitation.",
-            "<strong>For Humans:</strong> Increased risk of injury, difficulty in handling animals, and challenges in maintaining cleanliness and hygiene.",
+            "<strong>For Humans:</strong> Increased risk of injury, difficulty in handling animals, and challenges in maintaining cleanliness and hygiene."
         ]
     },
     {
         question: "Explain the isolation process.",
-        answer: "Isolation involves separating sick animals from healthy ones to prevent the spread of disease. It includes quarantine, monitoring for symptoms, and providing separate care and sanitation.",
+        answer: "Isolation involves separating sick animals from healthy ones to prevent the spread of disease. It includes quarantine, monitoring for symptoms, and providing separate care and sanitation."
     },
     {
         question: "What is a vaccination record?",
@@ -81,7 +88,7 @@ const questions = [
         question: "Give two advantages of vaccinating animals.",
         answer: [
             "Prevention of serious diseases.",
-            "Protection of public health by reducing zoonotic disease transmission.",
+            "Protection of public health by reducing zoonotic disease transmission."
         ]
     },
     {
@@ -91,7 +98,7 @@ const questions = [
             "Ventilation and temperature control.",
             "Sanitation and cleaning protocols.",
             "Safety features to prevent escapes and injuries.",
-            "Noise reduction to minimize stress.",
+            "Noise reduction to minimize stress."
         ]
     },
     {
@@ -105,7 +112,7 @@ const questions = [
             "Number of animals to be housed.",
             "Environmental conditions (temperature, humidity).",
             "Ease of cleaning and maintenance.",
-            "Safety and security features.",
+            "Safety and security features."
         ]
     },
     { 
@@ -113,7 +120,7 @@ const questions = [
         answer: [
             "Bacteria",
             "Viruses",
-            "Fungi",
+            "Fungi"
         ]
     },
     {
@@ -124,7 +131,7 @@ const questions = [
             "Vomiting",
             "Poor coat condition",
             "Anemia",
-            "Bloating abdomen",
+            "Bloating abdomen"
         ]
     },
     {
@@ -135,14 +142,14 @@ const questions = [
             "Dust levels",
             "Non-toxicity",
             "Ease of cleaning",
-            "Cost",
+            "Cost"
         ]
     },
     {
         question: "What are 2 main diseases rabbits are vaccinated against?",
         answer: [
             "Myxomatosis",
-            "Rabbit Viral Haemorrhagic Disease (RVHD)",
+            "Rabbit Viral Haemorrhagic Disease (RVHD)"
         ]
     },
     {
@@ -156,7 +163,7 @@ const questions = [
             "Effective in preventing disease",
             "Long-lasting immunity",
             "Stable and easy to store",
-            "Cost-effective",
+            "Cost-effective"
         ]
     },
     { 
@@ -165,7 +172,7 @@ const questions = [
     },
     {
         question: "What disease can ticks cause in animals?",
-        answer: "Lyme disease",
+        answer: "Lyme disease"
     },
     {
         question:"What is key in infection control?",
@@ -189,7 +196,7 @@ const questions = [
             "Dog Breeding and Sale Act 2010",
             "Animal Health and Welfare Act 2013",
             "Welfare of Animals Regulations 2018",
-            "Control of Dogs Order 1992",
+            "Control of Dogs Order 1992"
         ]
     },
     {
@@ -213,7 +220,7 @@ const questions = [
             "Self-mutilation or excessive grooming",
             "Hiding or withdrawal from social interaction",
             "Changes in eating or drinking habits",
-            "Destructive behavior",
+            "Destructive behavior"
         ]
     },
     {
@@ -222,21 +229,21 @@ const questions = [
             "Improper storage or handling of vaccines",
             "Incorrect administration technique",
             "Animal's immune system compromised (e.g., illness, stress)",
-            "Inadequate vaccination schedule or missed boosters",
+            "Inadequate vaccination schedule or missed boosters"
         ]
     },
     {
         question: "Give 2 reasons why good ventilation is essential in kennels and catteries.",
         answer: [   
             "Prevents the buildup of harmful gases (e.g., ammonia) from waste/urine.",
-            "Reduces humidity and temperature, minimizing stress and disease transmission (by airbone).",
+            "Reduces humidity and temperature, minimizing stress and disease transmission (by airbone)."
         ]
     },
     {
         question: "List the core and non-core vaccines for cats.",
         answer: [
             "Core vaccines: Feline Panleukopenia, Feline Calicivirus, Feline Herpesvirus (Rhinotracheitis)",
-            "Non-core vaccines: Rabies, Feline Leukemia Virus (FeLV), Feline Immunodeficiency Virus (FIV)",
+            "Non-core vaccines: Rabies, Feline Leukemia Virus (FeLV), Feline Immunodeficiency Virus (FIV)"
         ]
     },
     {
