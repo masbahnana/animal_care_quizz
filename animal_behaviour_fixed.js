@@ -83,7 +83,7 @@ const question = [
     },
     {
       question: "Organisms survive in habitats in which their basic needs are met. Name five basic needs of animals.",
-      answer: "."
+      answer: "Food for energy, water for bodily functions, shelter for protection, space for movement and territory, and air (specifically oxygen) for respiration."
     },
     {
       question: "Define the following terms: a) Nocturnal; b) Camouflage; c) Metamorphose; d) Mimicry; e) Hibernation",
