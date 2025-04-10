@@ -170,7 +170,7 @@ const question = [
       },
       {
         question: "During cold weather, how much can an outdoor animal’s energy requirement increase by (in %)?",
-        answer: "Up to 100%"
+        answer: "30-40%"
       },
       {
         question: "Stress in an animal is likely to increase or decrease feed intake and state the effects of prolonged exposure to stress on an animal’s body.",
